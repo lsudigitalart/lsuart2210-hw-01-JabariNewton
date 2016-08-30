@@ -34,6 +34,6 @@ function draw() {
 
         }
 
-  ellipse(mouseX,mouseY, sizeTimer, sizeTimer);
+  ellipse(redHue,greenHue, sizeTimer, sizeTimer);
 
 }
