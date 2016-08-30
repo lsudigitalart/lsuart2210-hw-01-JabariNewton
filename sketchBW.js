@@ -6,6 +6,8 @@ var randomHue = 0;
 var i=0;
 var e=0;
 var canSize=600;
+var o=0;
+var u=0;
 
 function setup() {
   createCanvas(canSize, canSize);
@@ -22,6 +24,7 @@ function draw() {
           greenHue = greenHue +2;
           blueHue = blueHue +3
           sizeTimer = sizeTimer + 3;
+          canSize = canSize + 1;
 
             for(i=0;sizeTimer > 100;randomHue++) {
               redHue = (Math.floor((Math.random() * 322) + 20));
@@ -33,6 +36,7 @@ function draw() {
 
         }
 
-  ellipse(redHue,blueHue, sizeTimer, sizeTimer);
+  ellipse((sizeTimer+((Math.floor((Math.random() * 322) + 20)))),sizeTimer, sizeTimer, sizeTimer);
+
 
 }
